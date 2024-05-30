@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 0A
+raw = ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff
+qb2 = d0-00-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff-ff
+qb64 = 0AD_____________________
+

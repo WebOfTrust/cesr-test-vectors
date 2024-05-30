@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = M
+raw = 3e-12
+qb2 = 30-3e-12
+qb64 = MD4S
+

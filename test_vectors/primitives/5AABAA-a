@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 5A
+raw = 0f-9a
+qb2 = e4-00-01-00-0f-9a
+qb64 = 5AABAA-a
+

@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 1__-
+raw = 00-00-00-00
+qb2 = d7-ff-fe-4c-60-00-00-00-00
+qb64 = 1__-TGAAAAAA
+
