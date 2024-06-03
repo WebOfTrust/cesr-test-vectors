@@ -2,12 +2,13 @@ import configparser
 import os
 import pytest
 
-from keri.core.coring import Matter, MtrDex, Indexer
+from keri.core.coring import Matter, MtrDex
 from keri.core.indexing import Indexer, IdrDex
 
 
 def init():
     os.makedirs("test_vectors/primitives/", exist_ok=True)
+    os.makedirs("test_vectors/indexes/", exist_ok=True)
 
 def monkey_patch_Matter():
     old_init = Matter.__init__
@@ -62,12 +63,12 @@ def monkey_patch_Indexer():
         ondex: 1
         """
         config_writer = configparser.ConfigParser()
-        config_writer['PRIMITIVE'] = {"code": self.code,
+        config_writer['PRIMITIVE'] = {"code": str(self.code),
                                      "raw": self.raw.hex("-"),
                                      "qb2": self.qb2.hex("-"),
-                                     "qb64": self.qb64,
-                                     "index": self.index,
-                                     "ondex": self.ondex}
+                                     "qb64": str(self.qb64),
+                                     "index": str(self.index),
+                                     "ondex": str(self.ondex)}
         with open(old_directory + f"/test_vectors/indexes/{self.qb64[:64]}", "w") as fyle:
             config_writer.write(fyle)
         
@@ -78,7 +79,7 @@ def monkey_patch_Indexer():
         # qb64 = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
     # Monkeypatch
-    Matter.__init__ = new_init
+    Indexer.__init__ = new_init
 
 
 def cd_to_keripy_repo_run_pytest():
