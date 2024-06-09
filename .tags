@@ -11,3 +11,6 @@ monkey_patch_Indexer	generate_test_vectors.py	/^def monkey_patch_Indexer():$/;"	
 monkey_patch_Matter	generate_test_vectors.py	/^def monkey_patch_Matter():$/;"	f
 new_init	generate_test_vectors.py	/^    def new_init(self, raw=None, code=IdrDex.Ed25519_Sig, index=0, ondex=None,$/;"	f	function:monkey_patch_Indexer
 new_init	generate_test_vectors.py	/^    def new_init(self, raw=None, code=MtrDex.Ed25519N, soft='', rize=None,$/;"	f	function:monkey_patch_Matter
+sizeify-hypothesis.py	sizeify-hypothesis.py	1;"	F
+test_sizeify_v1	sizeify-hypothesis.py	/^def test_sizeify_v1(test_dict):$/;"	f
+test_sizeify_v2	sizeify-hypothesis.py	/^def test_sizeify_v2(test_dict):$/;"	f
