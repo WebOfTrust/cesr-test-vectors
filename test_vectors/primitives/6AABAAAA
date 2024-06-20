@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 6A
+raw = 00
+qb2 = e8-00-01-00-00-00
+qb64 = 6AABAAAA
+

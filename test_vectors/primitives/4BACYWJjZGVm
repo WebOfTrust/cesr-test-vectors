@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 4B
+raw = 61-62-63-64-65-66
+qb2 = e0-10-02-61-62-63-64-65-66
+qb64 = 4BACYWJjZGVm
+

@@ -1,0 +1,6 @@
+[PRIMITIVE]
+code = 0H
+raw = ff-ff-ff-ff
+qb2 = d0-70-ff-ff-ff-ff
+qb64 = 0HD_____
+
